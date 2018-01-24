@@ -36,14 +36,15 @@ public class Main {
 					System.out.println("FairPlay Selected");
 					cipher = new FairPlay();
 					cipher.getPText();
-					System.out.println(cipher.getCText());
+					System.out.println("Vigenere Cipher Text(without spaces): " + cipher.getCText());
+					System.out.println("--------------------------------------------------------");
 					
 				} else if (nextLine.equals("3")) {
 					System.out.println("Vigenere Selected");
 					cipher = new Vigenere();
 					cipher.getPText();
-					System.out.println(cipher.getCText());
-					
+					System.out.println("Vigenere Cipher Text(without spaces): " + cipher.getCText());
+					System.out.println("--------------------------------------------------------");
 				} else {
 					System.out.println("Invalid input, please select a valid option.");
 				}
